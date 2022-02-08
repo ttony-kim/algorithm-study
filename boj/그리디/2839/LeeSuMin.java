@@ -10,14 +10,9 @@ class Solution {
 
 		int result = -1;
 		int m = 1, n = 0;
-		
-		// 우선 순위 3
-		if(sugar % 3 == 0) {
-			result = sugar / 3;
-		}
-		
+
 		// 우선 순위 2
-		while(m == sugar / 3) {
+		while(m <= sugar / 3) {
 			n = sugar - 3 * m;
 			if(n % 5 == 0) {
 				result = m + n / 5;
