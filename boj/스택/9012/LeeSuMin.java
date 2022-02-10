@@ -5,35 +5,35 @@ import java.util.Stack;
 
 class Solution {
 	public static void main(String[] args) throws NumberFormatException, IOException {
-		StringBuilder sb = new StringBuilder();
-		boolean isVPS = true;
 		Stack<Character> stack;
+		boolean isVPS;
+		StringBuilder sb = new StringBuilder();
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		int n = Integer.parseInt(br.readLine()); 
+		int n = Integer.parseInt(br.readLine());
 
-		for(int i=0; i<n; i++) {
+		for (int i = 0; i < n; i++) {
+			isVPS = true;
 			stack = new Stack<>();
 			String line = br.readLine();
-			for(int j=0,len=line.length(); j<len; j++) { 
-				if(line.charAt(j) == '(') 
+
+			for (int j = 0, len = line.length(); j < len; j++) {
+				if (line.charAt(j) == '(')
 					stack.push('(');
-				else if(line.charAt(j) == '(') {
-					if(stack.isEmpty()) 
+				else {
+					if (stack.isEmpty())
 						isVPS = false;
-					else 
+					else
 						stack.pop();
 				}
-				
-				if(!isVPS) break;
+
+				if (!isVPS) break;
 			}
-			
-			if(!stack.isEmpty()) 
-				isVPS = false;
-			
+
+			if (!stack.isEmpty()) isVPS = false;
+
 			sb.append(isVPS ? "YES\n" : "NO\n");
 		}
 
 		System.out.print(sb);
-
 	}
 }
