@@ -1,5 +1,4 @@
 import java.util.Arrays;
-
 import java.util.PriorityQueue;
 
 public int solution(int[] scoville, int K) {
