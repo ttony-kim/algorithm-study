@@ -12,32 +12,36 @@ public class Main {
 
 		int N = Integer.parseInt(st.nextToken());
 		int K = Integer.parseInt(st.nextToken());
-		int result = 0;
-		boolean find = false;
+		if (N >= K) {
+			System.out.println(N - K);
+			return;
+		}
 
 		Queue<Integer> q = new LinkedList<Integer>();
-		q.add(K);
+		q.add(N);
 
-		while (!find) {
-			int tempSize = q.size();
-			while(tempSize > 0) {
-				int temp = q.poll();
-				int nextTemp1 = temp / 2;
-				int nextTemp2 = temp - 1;
-				int nextTemp3 = temp + 1;
-				if(nextTemp1 == N || nextTemp2 == N || nextTemp3 == N) {
-					find = true;
-					break;
-				}
-				if (temp % 2 == 0)
-					q.add(nextTemp1);
-				q.add(nextTemp2);
-				q.add(nextTemp3);
-				tempSize--;
+		int[] visited = new int[100001];
+
+		while (!q.isEmpty()) {
+			int temp = q.poll();
+			if (temp == K) break;
+			int next1 = temp * 2;
+			int next2 = temp + 1;
+			int next3 = temp - 1;
+			// next1 > 2 > 3 순서로 하면 문제 틀려서 순서 바꿈
+			if (next3 >= 0 && visited[next3] == 0) {
+				q.add(next3);
+				visited[next3] = visited[temp] + 1;
 			}
-			result++;
+			if (next2 < visited.length && visited[next2] == 0) {
+				q.add(next2);
+				visited[next2] = visited[temp] + 1;
+			}
+			if (next1 < visited.length && visited[next1] == 0) {
+				q.add(next1);
+				visited[next1] = visited[temp] + 1;
+			}
 		}
-		
-		System.out.println(result);
+		System.out.println(visited[K]);
 	}
 }
