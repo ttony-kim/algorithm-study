@@ -35,5 +35,5 @@
 - 1주차
   * 입출력
   * git 학습
-- 2주차 ~
-  * programmers 문제
+- 2주차 ~ 3/4
+  * programmers, boj 풀이
