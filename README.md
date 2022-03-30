@@ -1,11 +1,13 @@
 # algorithm-study
 
-# 진행 방식
+:boom: 충격 스터디 1회차 완주자 실존 :boom:  
+[이수민](https://github.com/leelee31), [박지현](https://github.com/jyhynn)
 
-- 매주 월요일 문제 선정, 토요일까지 풀이하여 업로드
-- 공통 문제 개인 별 풀이 후 서로 코드 리뷰
-- git 학습
-- 2주에 1회 zoom 회의에서 스터디 개선 사항, 본인이 학습한 알고리즘 내용, 이슈 등 공유
+# 목표
+
+- Git 환경에 익숙해지기
+- 알고리즘 학습
+
 
 # 업로드 규칙
 
@@ -32,8 +34,8 @@
 - algospot https://algospot.com/judge/problem/list
 
 # 일정
-- 1주차
-  * 입출력
-  * git 학습
-- 2주차 ~ 3/4
-  * programmers, boj 풀이
+- 준비
+  * 입출력 문제 풀이
+  * 첫 PR
+- 1회차 (2/5 ~ 3/4)
+  * programmers, boj 문제 월~금 매일 풀이
