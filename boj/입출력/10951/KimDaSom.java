@@ -1,4 +1,4 @@
-package boj.ÀÔÃâ·Â;
+package boj.ìž…ì¶œë ¥;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,7 +9,7 @@ import java.util.StringTokenizer;
 public class problem_10951 {
 
 	public static void main(String[] args) {
-		//Scanner ¹æ½Ä
+		//Scanner ï¿½ï¿½ï¿½
 		/*Scanner sc = new Scanner(System.in);
 		int a, b;
 		while(sc.hasNextInt()) {
@@ -19,7 +19,7 @@ public class problem_10951 {
 		}
 		sc.close();*/
 		
-		//BufferedReader ¹æ½Ä, StringTokenizer »ç¿ë
+		//BufferedReader ï¿½ï¿½ï¿½, StringTokenizer ï¿½ï¿½ï¿½
 		/*BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		try {
 			String line;
@@ -34,7 +34,7 @@ public class problem_10951 {
 			e.printStackTrace();
 		}*/
 		
-		//BufferedReader ¹æ½Ä, charAt »ç¿ë
+		//BufferedReader ï¿½ï¿½ï¿½, charAt ï¿½ï¿½ï¿½
 		try {
 			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 			String line;

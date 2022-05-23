@@ -1,4 +1,4 @@
-package boj.ÀÔÃâ·Â;
+package boj.ì…ì¶œë ¥;
 
 import java.util.Scanner;
 
