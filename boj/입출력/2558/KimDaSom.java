@@ -2,11 +2,16 @@ package boj.입출력;
 
 import java.util.Scanner;
 
-public class problem_1000 {
+public class problem_2558 {
+
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int a = sc.nextInt();
-		int b = sc.nextInt();
+		int a,b;
+		a = sc.nextInt();
+		b = sc.nextInt();
+		
 		System.out.println(a+b);
+
 	}
+
 }
